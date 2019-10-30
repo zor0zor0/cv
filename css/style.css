@@ -1,0 +1,111 @@
+:root{
+    --background-color:#1679fa;
+    --text-color-1:white;
+    --text-color-2:#bcced6;
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+.btn{
+    padding: 0.5rem 1rem;
+    border: none;
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+}
+p{
+    padding: 1rem 0;
+}
+li{
+    list-style: none;
+    float: left;
+    padding: 1rem 0.5rem;
+}
+
+i {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+body{
+    background: var(--background-color);
+}
+#navbar{
+color: white;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+#navbar .media-icon span{
+    padding: 1rem 0.5rem;
+}
+#main-header{
+    margin-top: 2rem;
+}
+#main-header .main-header{
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+#main-header .showcase {
+    width: 100%;
+    position: relative;
+}
+#main-header .showcase .layer .showcase-img{
+background: url(../images/banner.jpg) no-repeat center center/cover;
+height: 60vh;
+width: 100%;
+
+}
+#main-header.showcase .layer{
+    position: relative;
+}
+#main-header .showcase .showcase-img::before{
+    position: absolute;
+    content: '';
+    background: rgba(0,0,0,0.4);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+#main-header .container .showcase .showcase-content{
+    position: absolute;
+    top:20vh;
+    left:50px;
+    color: white;
+    flex: 1;
+}
+#main-header .container .showcase .showcase-content p,
+#main-header .container .showcase .showcase-content span{
+color: var(--text-color-2);
+}
+#main-header .container .showcase .showcase-content p{
+    width: 60%;
+}
+#main-header .container .showcase .showcase-content span{
+    font-size: 2rem;
+}
+#main-header .container .showcase .showcase-content .btn{
+border: 1px solid var(--text-color-1);
+}
+#main-header .container .showcase .showcase-content .btn a{
+    color: var(--text-color-1);
+}
+#info
