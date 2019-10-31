@@ -59,6 +59,9 @@ i {
     font-weight: 100;
     margin-bottom: 3rem !important;
 }
+.pb-2{
+    padding-bottom: 1rem;
+}
 .pt-1{
     padding-top: 1rem;
 }
