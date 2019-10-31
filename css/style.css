@@ -1,7 +1,7 @@
 :root{
     --background-color:#3369e7;
     --text-color-1:white;
-    --text-color-2:#bcced6;
+    --text-color-2:#707579;
 }
 *{
     margin: 0;
@@ -20,6 +20,10 @@
 }
 .btn-2{
     background: #4c7aed;
+    color: white;
+}
+.btn-4{
+    background: black;
     color: white;
 }
 a{
@@ -49,19 +53,69 @@ i {
 
 /* Ultility classes */
 .pb-1{
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
+    font-size: 36px;
+    color: #000;
+    font-weight: 100;
+    margin-bottom: 3rem !important;
+}
+.pr-1{
+    padding-right: 1rem;
 }
 .m-2{
     margin:-2rem;
 }
+.mb-1{
+    margin-bottom: 1rem;
+}
+.mr-1{
+    margin-right: 1rem;
+}
+.mb-1{
+    margin-bottom: 1rem;
+}
 .p-2{
-    padding: 2rem;
+    padding: 2rem 4rem;
 }
 .py-1{
     padding: 1rem 0;
 }
 .py-2{
     padding: 2rem 0;
+}
+.font-2x{
+    font-size: 2rem;
+}
+.font-3x{
+    font-size: 3rem;
+}
+.text-red{
+    color: red;
+}
+.text-light-blue{
+    color: #34abeb;
+}
+.text-dark-blue{
+    color: blue;
+}
+.bar-red{
+    background: red;
+    width: 90%;
+    height: 3px;
+}
+.bar-light-blue{
+    background: #34abeb;
+    width: 85%;
+    height: 3px;
+}
+.bar-dark-blue{
+    background: blue;
+    width: 70%;
+    height: 3px;
+}
+
+.text-color-primary{
+    color: var(--text-color-2);
 }
 .container{
     max-width: 1100px;
@@ -140,7 +194,7 @@ width: 100%;
 }
 #main-header .container .showcase .showcase-content p,
 #main-header .container .showcase .showcase-content span{
-color: var(--text-color-2);
+color: wheat;
 }
 #main-header .container .showcase .showcase-content p{
     width: 60%;
@@ -178,7 +232,7 @@ border: 1px solid var(--text-color-1);
 /* Section Services */
 #service .service-container{
     width: 100%;
-    background: #fff2f2;
+    background: #f6f6f6;
 }
 #service .service-container .service-contents .content{
 display: flex;
@@ -225,4 +279,85 @@ align-content: space-between;
 }
 #skills .skill-container .skill-contents .skill-icons .icon-item{
     flex: 1;
+}
+#skills .skill-container .skill-contents .skill-icons .icon-item{
+    font-weight: bolt;
+}
+
+#skills .skill-container .skill-contents .skill-icons .icon-content{
+    color: var(--text-color-2);
+}
+.#skills .skill-container .skill-contents .skill-content >div{
+    width: 100%;
+}
+.#skills .skill-container .skill-contents .skill-content .progess-bar{
+    height: 2px;
+}
+/* Section Project */
+#project .container-2 .project-container{
+    background: #f6f6f6;
+    width: 100%;
+}
+#project .container-2 .project-container .project-img{
+    display: flex;
+    flex-direction: column;;
+}
+#project .container-2 .project-container .project-img .img-top,
+#project .container-2 .project-container .project-img .img-bottom{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+#project .container-2 .project-container .project-img .img-top .img-1{
+    background: url(../images/p1.jpg) no-repeat center center/cover;
+    height: 200px;
+    flex: 1;
+}
+#project .container-2 .project-container .project-img .img-top .img-2{
+    background: url(../images/p2.jpg) no-repeat center center/cover;
+    height: 200px;
+    flex: 1;
+}
+#project .container-2 .project-container .project-img .img-top .img-3{
+    background: url(../images/p3.jpg) no-repeat center center/cover;
+    height: 200px;
+    flex: 1;
+}
+#project .container-2 .project-container .project-img .img-top .img-4{
+    background: url(../images/p4.jpg) no-repeat center center/cover;
+    height: 200px;
+    flex: 1;
+}
+#project .container-2 .project-container .project-img .img-bottom .img-1{
+    background: url(../images/p5.jpg) no-repeat center center/cover;
+    height: 200px;
+    flex: 1;
+}
+#project .container-2 .project-container .project-img .img-bottom .img-2{
+    background: url(../images/p6.jpg) no-repeat center center/cover;
+    height: 200px;
+    flex: 1;
+}
+#project .container-2 .project-container .project-img .img-bottom .img-3{
+    background: url(../images/p7.jpg) no-repeat center center/cover;
+    height: 200px;
+    flex: 1;
+}
+#project .container-2 .project-container .project-img .img-bottom .img-4{
+    background: url(../images/p8.jpg) no-repeat center center/cover;
+    height: 200px;
+    flex: 1;
+}
+
+/* Section Education and Experience */
+#edu .edu-container .edu-title .button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#edu .edu-container .edu-title .button .btn{
+    margin-right: 10px;
 }
